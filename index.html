@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="inner-container">
+            <div class="result-bar">
+                <p id="result"></p>
+            </div>
+            <div class="columns">
+                <div id="column1">
+                    <button class="default edit" id="backspace">
+                        <i data-lucide="delete"></i>
+                    </button>
+                    <button class="default" id="seven">7</button>
+                    <button class="default" id="four">4</button>
+                    <button class="default" id="one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M148,48V208a12,12,0,0,1-24,0V69.19l-21.83,13.1A12,12,0,0,1,89.83,61.71l40-24A12,12,0,0,1,148,48Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="column2">
+                    <button class="default edit" id="clear">
+                        <i data-lucide="trash-2"></i>
+                    </button>
+                    <button class="default" id="eight">8</button>
+                    <button class="default" id="five">5</button>
+                    <button class="default" id="two">2</button>
+                    <button class="default" id="zero">0</button>
+                </div>
+
+                <div id="column3">
+                    <button class="default operation" id="modulo">
+                        <i data-lucide="percent"></i>
+                    </button>
+                    <button class="default" id="nine">9</button>
+                    <button class="default" id="six">6</button>
+                    <button class="default" id="three">3</button>
+                    <button class="default" id="decimal">.</button>
+                </div>
+
+                <div id="column4">
+                    <button class="default operation" id="divide">
+                        <i data-lucide="divide"></i>
+                    </button>
+                    <button class="default operation" id="multiply">
+                        <i data-lucide="x"></i>
+                    </button>
+                    <button class="default operation" id="subtract">
+                        <i data-lucide="minus"></i>
+                    </button>
+                    <button class="default operation" id="add">
+                        <i data-lucide="plus"></i>
+                    </button>
+                    <button class="default operation" id="equal">
+                        <i data-lucide="equal"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="features">
+            <p>Features</p>
+            <ul>
+                <li>Full 0-9 number support</li>
+                <li>Modulo, division, multiplication, subtraction, and addition</li>
+                <li>Floating point number support</li>
+                <li>Backspace and clear</li>
+                <li>Keyboard support</li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
